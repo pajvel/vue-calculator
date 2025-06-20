@@ -1,0 +1,128 @@
+/*
+    colors
+    bg #000
+    orange #ff9501
+    grey #a6a6a6
+    white #fdfdfd
+*/
+
+:root {
+    --bg-color: #000;
+    --btn-color: #333;
+    --text-color: #fdfdfd;
+}
+
+[data-theme="light"] {
+    --bg-color: #fdfdfd;
+    --btn-color: #d1d1d1;
+    --text-color: #040404;
+}
+
+
+.calc {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 50px auto;
+    background: var(--bg-color);
+    border-radius: 20px;
+    color: var(--text-color);
+    font-family: Arial;
+    display: grid;
+    padding: 18px;
+    box-shadow: 4px 4px 6px #4f4f4f;
+    position: relative;
+
+}
+
+.calc-screen {
+    height: 125px;
+    /* padding: 18px; */
+    position: relative;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+
+.calc-screen p {
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+}
+
+
+ }
+.buttons {
+    display: grid;
+    grid-template-areas:
+    "clean ac percent division"
+    "seven eigth nine multi"
+    "four five siz minus"
+    "one two three plus"
+    "zero dot equal equal";
+    grid-gap: 7px;
+    /* padding: 10px; */
+    justify-items: center;
+    align-items: center;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: var(--btn-color);
+    border-radius: 30%;
+    text-align: center;
+    text-color: white;
+    line-height: 63px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    user-select:none
+
+}
+.btn:hover {
+    filter: brightness(130%);
+}
+.btn:active {
+    filter: brightness(90%);
+}
+.bg-purple {
+    background-color: #48b695;
+}
+
+.btn-theme {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-color);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+
+.btn.plus-minus {
+    grid-area: plus-minus;
+}
+
+.btn.percent {
+    grid-area: percent;
+}
+
+.btn.division {
+    grid-area: division;
+}
+
+.btn.equal {
+    grid-area: equal;
+    width: 100%;
+    border-radius: 34px;
+}

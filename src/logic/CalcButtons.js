@@ -1,0 +1,21 @@
+export const CalcButtons = [
+{ label: "c", type: "clear", class: "clean bg-purple" },
+{ label: "ac", type: "ac", class: "ac bg-purple" },
+{ label: "%", type: "percent", class: "percent bg-purple" },
+{ label: "/", value: "/", type: "op", class: "divisi bg-purple" },
+{ label: "7", value: 7, type: "num" },
+{ label: "8", value: 8, type: "num" },
+{ label: "9", value: 9, type: "num" },
+{ label: "*", value: "*", type: "op", class: "myltiply bg-purple" },
+{ label: "4", value: 4, type: "num" },
+{ label: "5", value: 5, type: "num" },
+{ label: "6", value: 6, type: "num" },
+{ label: "-", value: "-", type: "op", class: "minus bg-purple" },
+{ label: "1", value: 1, type: "num" },
+{ label: "2", value: 2, type: "num" },
+{ label: "3", value: 3, type: "num" },
+{ label: "+", value: "+", type: "op", class: "plus bg-purple" },
+{ label: "0", value: 0, type: "num" },
+{ label: ".", type: "dot", class: "dot" },
+{ label: "=", type: "eq", class: "equal bg-purple" }
+];
